@@ -92,8 +92,6 @@ systemd user service.
 
 ## Installation
 
-## Installation
-
 Clone the repository:
 
 ```bash
