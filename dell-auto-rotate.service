@@ -1,0 +1,17 @@
+mkdir -p ~/.config/systemd/user
+
+cat > ~/.config/systemd/user/dell-auto-rotate.service <<'UNIT'
+[Unit]
+Description=Dell detachable tablet automatic display rotation
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/dell-auto-rotate.py
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target
+UNIT
