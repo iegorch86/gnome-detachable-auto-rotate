@@ -92,6 +92,38 @@ systemd user service.
 
 ## Installation
 
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR-USERNAME/dell-7210-auto-rotate.git
+cd dell-7210-auto-rotate
+```
+
+Run installer:
+```bash
+./install.sh
+```
+The installer will:
+
+ - copy dell-auto-rotate.py to ~/.local/bin/
+ - copy the systemd user service to ~/.config/systemd/user/
+ - reload systemd
+ - enable and start the service
+
+Check status:
+```bash
+systemctl --user status dell-auto-rotate.service
+```
+Live logs:
+```bash
+journalctl --user -u dell-auto-rotate.service -f
+```
+--- 
+
+## Manual installation
+
 Copy files
 
 ```
