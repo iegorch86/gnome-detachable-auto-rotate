@@ -190,7 +190,7 @@ Until then this workaround works really well.
 
 ## Story
 
-I about 8 hours trying different ideas.
+I spent about 6 hours trying different ideas.
 
 Tried virtual tablet mode switches, uinput devices, and emulating SW_TABLET_MODE. Everything looked correct in libinput, but GNOME still refused to rotate after booting detached.
 
